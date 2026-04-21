@@ -16,8 +16,8 @@ body {
   /* Textura de cuero sutil (ruido + degradado) */
   /*background-image: 
     repeating-linear-gradient(45deg, rgba(74,44,27,0.02) 0px, rgba(74,44,27,0.02) 2px, transparent 2px, transparent 6px),
-    radial-gradient(circle at 30% 40%, rgba(59,94,43,0.03) 0%, transparent 30%);
-} */
+    radial-gradient(circle at 30% 40%, rgba(59,94,43,0.03) 0%, transparent 30%); */
+} 
 
 /* ===== HEADER ===== */
 .header {
