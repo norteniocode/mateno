@@ -29,7 +29,7 @@ body {
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  border-bottom: 4px solid #3b5e2b; /* verde oliva */
+  border-bottom: 4px solid #9bd359; /* verde oliva */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -53,7 +53,7 @@ body {
   letter-spacing: 4px;
   text-transform: uppercase;
   text-shadow: 2px 2px 0 #3b5e2b;
-  font-family: 'Segoe Script', 'Brush Script MT', 'Lucida Handwriting', cursive, serif;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
 }
 
@@ -78,7 +78,7 @@ body {
   backdrop-filter: blur(2px);
   border-radius: 16px 8px 16px 8px;
   overflow: hidden;
-  box-shadow: 8px 8px 0 #3b5e2b, 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 8px 8px 0 #9bd359, 0 4px 12px rgba(0,0,0,0.1);
   border: 1px solid #4a2c1b;
   transition: transform 0.2s ease;
 }
@@ -93,7 +93,7 @@ body {
   display: block;        /* Elimina espacios fantasma debajo de la imagen */
   object-fit: contain;   /* Muestra la imagen completa sin recortar (opcional, pero refuerza el comportamiento) */
   background-color: #8b5e3c;  /* Color de fondo solo visible si la imagen tiene transparencia */
-  border-bottom: 3px solid #3b5e2b;
+  border-bottom: 3px solid #9bd369;
 }
 
 /* Placeholder específico */
@@ -108,7 +108,7 @@ body {
   margin: 1rem 1rem 0.5rem;
   color: #4a2c1b;
   font-weight: 600;
-  border-left: 5px solid #3b5e2b;
+  border-left: 5px solid #9bd369;
   padding-left: 12px;
 }
 
@@ -138,7 +138,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border-top: 4px solid #4a2c1b;
+  border-top: 4px solid #9bd359;
   box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
 }
 
