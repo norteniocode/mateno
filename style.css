@@ -21,7 +21,8 @@ body {
 
 /* ===== HEADER ===== */
 .header {
-  background-color: #4a2c1b;  /* marrón oscuro */
+ /* background-color: #4a2c1b;  /* marrón oscuro */
+  background-color: #93683c;
   color: #f0e0c8;
   padding: 1.2rem 2rem;
   display: flex;
