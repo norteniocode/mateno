@@ -3,160 +3,310 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mateño</title>
+  <title>Mateño — Mates y bombillas del norte</title>
+  <meta name="description" content="Mateño. Mates de calabaza, algarrobo, cuero y alpaca. Bombillas de alpaca y bronce. Hechos de a uno en el norte argentino.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header con contacto -->
-  <header class="header">
-    <!--
-    <div class="header__contacto">
-      <span class="icono-tel">📞</span>
-      <span>+54 9 388 412-3456</span>
-    </div> -->
-    <!-- Sin menú de navegación, solo título -->
-    <h1 class="header__titulo">Mateño</h1>
+
+  <svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0">
+    <symbol id="sol-lineas" viewBox="0 0 200 200">
+      <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round">
+        <circle cx="100" cy="100" r="54"/>
+        <path d="M158 100h38M150.2 129l32.9 19M129 150.2l19 32.9M100 158v38M71 150.2l-19.1 32.9M49.8 129l-32.9 19M42 100H4M49.8 71L16.9 52M71 49.8L51.9 16.9M100 42V4M129 49.8l19-32.9M150.2 71l32.9-19"/>
+      </g>
+    </symbol>
+    <symbol id="jacaranda" viewBox="0 0 160 200">
+      <g fill="currentColor">
+        <path d="M70 200C71 170 72 146 74 118L86 118C88 146 89 170 90 200Z"/>
+        <path d="M76 140 44 82l10-5 28 49zM84 140 116 82l-10-5-28 49z"/>
+        <circle cx="80" cy="46" r="36"/>
+        <circle cx="34" cy="68" r="26"/>
+        <circle cx="126" cy="68" r="26"/>
+        <circle cx="56" cy="78" r="22"/>
+        <circle cx="104" cy="78" r="22"/>
+        <circle cx="80" cy="24" r="20"/>
+      </g>
+    </symbol>
+    <symbol id="palo-borracho" viewBox="0 0 120 200">
+      <g fill="currentColor">
+        <path d="M44 200C38 182 34 162 36 146c2-22 10-36 14-50 1-2 1-4 1-6h18c0 2 0 4 1 6 4 14 12 28 14 50 2 16-2 36-8 54z"/>
+        <path d="M54 92 28 62l8-7 22 33zM66 92 92 62l-8-7-22 33z"/>
+        <circle cx="60" cy="36" r="24"/>
+        <circle cx="28" cy="48" r="18"/>
+        <circle cx="92" cy="48" r="18"/>
+        <circle cx="44" cy="54" r="15"/>
+        <circle cx="76" cy="54" r="15"/>
+        <circle cx="60" cy="52" r="16"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a class="saltar" href="#catalogo">Saltar al catálogo</a>
+
+  <header class="header" id="inicio">
+    <div class="contenedor header__fila">
+      <a class="marca" href="#inicio">Mateño<span class="marca__punto" aria-hidden="true"></span></a>
+      <nav class="nav" aria-label="Principal">
+        <a class="nav__link" href="#catalogo">Catálogo</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Contenido principal: catálogo -->
-  <main class="catalogo">
-    <div class="catalogo__grid">
-      <!-- Producto 1 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/mategalleta.png" >        
-        <h3 class="producto__nombre">Mate galleta</h3>
-        <p class="producto__descripcion">Mate de calabaza con una forma y tamaño unicos.</p>
-        <!-- Precio comentado por ahora, fácil de activar -->
-        <!-- <p class="producto__precio">$ 12.500</p> -->
-      </article>
-      <!-- Producto 2 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/matecriollo.png" >
-        <h3 class="producto__nombre">Mate criollo</h3>
-        <p class="producto__descripcion">Calabaza pura, al mejor estilo criollo.</p>
-      </article>
-      <!-- Producto 3 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/materanchero.png" >
-        <h3 class="producto__nombre">Mate ranchero</h3>
-        <p class="producto__descripcion">Mate de algarrobo con una forma unica.</p>
-      </article>
-      <!-- Producto 4 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/matetorpedo.png" >
-        <h3 class="producto__nombre">Mate torpedo</h3>
-        <p class="producto__descripcion">Mate de calabaza cubierta con cuero.</p>
-      </article>
-      <!-- Producto 5 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/matecamioneroalgarrobo.png" >
-        <h3 class="producto__nombre">Mate camionero</h3>
-        <p class="producto__descripcion">Mate de algarrobo.</p>
-      </article>
-      <!-- Producto 6 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/mategalletapulido.png" >
-        <h3 class="producto__nombre">Mate galleta pulido</h3>
-        <p class="producto__descripcion">Mate galleta pulido premium.</p>
-      </article>
-      <!-- Producto 7 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/camioneroalpaca.jpg" >
-        <h3 class="producto__nombre">Mate camionero de alpaca</h3>
-        <p class="producto__descripcion">Camionero con cuero repujado y alpaca cincelada mas aplique de bronce.</p>
-      </article>
-      <!-- Producto 8 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/imperial.jpg" >
-        <h3 class="producto__nombre">Mate imperial de alpaca</h3>
-        <p class="producto__descripcion">imperial con cuero repujado y virola de alpaca cincelada mas aplique de bronce.</p>
-      </article>
-      <!-- Producto 9 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/torpedoalpacasimple.jpg" >
-        <h3 class="producto__nombre">Mate torpedo de alpaca</h3>
-        <p class="producto__descripcion">Torpedo con virola de alpaca cincelada.</p>
-      </article>
-      <!-- Producto 10 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/torpedoaro.jpg" >
-        <h3 class="producto__nombre">Mate torpedo con aro</h3>
-        <p class="producto__descripcion">Torpedo de virola de alpaca cincelada mas aro de bronce.</p>
-      </article>
-      <!-- Producto 11 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/torpedodoblearo.jpg" >
-        <h3 class="producto__nombre">Mate torpedo doble aro</h3>
-        <p class="producto__descripcion">Torpedo con virola de alpaca cincelada mas dos aros de bronce.</p>
-      </article>
+  <main>
 
-      <!-- Producto 12 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/bombillamini.png" >
-        <h3 class="producto__nombre">Bombilla mini</h3>
-        <p class="producto__descripcion">Bombilla pico de loro de 16cm.</p>
-      </article>
-      <!-- Producto 13 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/bombillaaro.png" >
-        <h3 class="producto__nombre">Bombilla doble aro</h3>
-        <p class="producto__descripcion">Bombilla de 16cm pico de loro con doble aro.</p>
-      </article>
-      <!-- Producto 14 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/alpacaaplique.jpg" >
-        <h3 class="producto__nombre">Bombillas de alpaca y bronce con aplique</h3>
-        <p class="producto__descripcion">Bombillas de alpaca de 16cm.</p>
-      </article>
-      <!-- Producto 15 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/alpacabroncecurva.jpg" >
-        <h3 class="producto__nombre">Bombilla curva de alpaca y bronce</h3>
-        <p class="producto__descripcion">Bombilla curva de 16 17 cm.</p>
-      </article>
-      <!-- Producto 16 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/alpacabroncerecta.jpg" >
-        <h3 class="producto__nombre">Bombilla de alpaca y pico de bronce recta</h3>
-        <p class="producto__descripcion">Bombilla recta de alpaca mas bronce.</p>
-      </article>
-      <!-- Producto 17 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/alpacacurva.jpg" >
-        <h3 class="producto__nombre">Bombilla curva de alpaca mas aros de bronce</h3>
-        <p class="producto__descripcion">Bombilla curva de 16cm.</p>
-      </article>
-      <!-- Producto 18 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/alpacareca.jpg" >
-        <h3 class="producto__nombre">Bombilla recta de alpaca mas aros de bronce</h3>
-        <p class="producto__descripcion">Bombilla de alpaca recta.</p>
-      </article>
-      <!-- Producto 19 -->
-      <article class="producto">
-        <img class="producto__imagen" src="assets/img/picodeloro.jpg" >
-        <h3 class="producto__nombre">Bombilla pico de loro de alpaca y pico de bronce</h3>
-        <p class="producto__descripcion">Bombilla de alpaca de 17 18 cm.</p>
-      </article>
-        
-      <!--
-      <article class="producto">
-        <div class="producto__imagen" src="assets/img/">Producto 9</div>
-        <h3 class="producto__nombre">Guardamontes</h3>
-        <p class="producto__descripcion">Cuero curtido, ideal para montar.</p>
-      </article> 
-        -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="hero__sol" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><use href="#sol-lineas"/></svg>
+      </div>
+
+      <div class="contenedor hero__grid">
+        <div class="hero__texto">
+          <p class="kicker"><span class="kicker__linea" aria-hidden="true"></span>Colección norte</p>
+          <h1 class="hero__titulo" id="hero-titulo">Mateño</h1>
+          <p class="hero__sub">Mates y bombillas del norte argentino</p>
+          <p class="hero__lead">Calabaza, algarrobo, cuero y alpaca. Mates y bombillas torneados y terminados de a uno, para el ritual de todos los días.</p>
+          <div class="hero__acciones">
+            <a class="boton" href="#catalogo">Ver el catálogo</a>
+          </div>
+          <ul class="sellos">
+            <li class="sellos__item">Calabaza</li>
+            <li class="sellos__item">Algarrobo</li>
+            <li class="sellos__item">Cuero</li>
+            <li class="sellos__item">Alpaca</li>
+          </ul>
+        </div>
+
+        <div class="collage" aria-hidden="true">
+          <div class="collage__foto collage__foto--a"></div>
+          <div class="collage__foto collage__foto--b"></div>
+          <div class="collage__foto collage__foto--c"></div>
+          <p class="collage__sello">hecho<br>a mano</p>
+        </div>
+      </div>
+
+      <div class="hero__cerro" aria-hidden="true">
+        <svg viewBox="0 0 1440 180" preserveAspectRatio="none" focusable="false">
+          <path fill="#c06a35" opacity=".5" d="M0 180V140l180-36 140 32 140-40 160 36 140-24 160 32 140-28 160 26 140-30 140 22v70z"/>
+          <path fill="#e0a94b" d="M0 180v-60l140-34 120 30 140-46 140 52 140-26 140 40 140-32 140 44 120-36 140 44 80-16v40z"/>
+          <path fill="#7fa347" d="M0 180v-38q60-32 120 0t120 0 120 0 120 0 120 0 120 0 120 0 120 0 120 0 120 0 120 0 120 0v38z"/>
+        </svg>
+      </div>
+    </section>
+
+    <div class="banda banda--tela">
+      <svg class="banda__arbol banda__arbol--izq" aria-hidden="true" viewBox="0 0 160 200"><use href="#jacaranda"/></svg>
+      <p class="banda__texto">Calabaza · Algarrobo · Cuero · Alpaca · Bronce</p>
+      <svg class="banda__arbol banda__arbol--der" aria-hidden="true" viewBox="0 0 120 200"><use href="#palo-borracho"/></svg>
     </div>
+
+    <section class="catalogo" id="catalogo" aria-labelledby="catalogo-titulo">
+      <div class="contenedor catalogo__cabecera">
+        <div>
+          <p class="kicker"><span class="kicker__linea" aria-hidden="true"></span>Catálogo</p>
+          <h2 class="seccion__titulo" id="catalogo-titulo">Mates y bombillas<br>del norte</h2>
+        </div>
+        <p class="catalogo__lead">Mates de calabaza y algarrobo, bombillas de alpaca y bronce. Cada mate y cada bombilla salen distintos: la veta, el repujado y el pulido cambian de uno a otro.</p>
+      </div>
+
+      <div class="contenedor grid">
+
+        <article class="producto producto--destacada">
+          <div class="producto__media"><img src="assets/img/mategalleta.png" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Mate galleta</h3>
+            <p class="producto__desc">Mate de calabaza con una forma y tamaño unicos.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/matecriollo.png" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Mate criollo</h3>
+            <p class="producto__desc">Calabaza pura, al mejor estilo criollo.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/materanchero.png" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Mate ranchero</h3>
+            <p class="producto__desc">Mate de algarrobo con una forma unica.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/matetorpedo.png" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Mate torpedo</h3>
+            <p class="producto__desc">Mate de calabaza cubierta con cuero.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/matecamioneroalgarrobo.png" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Mate camionero</h3>
+            <p class="producto__desc">Mate de algarrobo.</p>
+          </div>
+        </article>
+
+        <article class="producto producto--destacada">
+          <div class="producto__media"><img src="assets/img/mategalletapulido.png" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Mate galleta pulido</h3>
+            <p class="producto__desc">Mate galleta pulido premium.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/camioneroalpaca.jpg" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Mate camionero de alpaca</h3>
+            <p class="producto__desc">Camionero con cuero repujado y alpaca cincelada mas aplique de bronce.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/imperial.jpg" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Mate imperial de alpaca</h3>
+            <p class="producto__desc">imperial con cuero repujado y virola de alpaca cincelada mas aplique de bronce.</p>
+          </div>
+        </article>
+
+        <article class="producto producto--destacada">
+          <div class="producto__media"><img src="assets/img/torpedoalpacasimple.jpg" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Mate torpedo de alpaca</h3>
+            <p class="producto__desc">Torpedo con virola de alpaca cincelada.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/torpedoaro.jpg" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Mate torpedo con aro</h3>
+            <p class="producto__desc">Torpedo de virola de alpaca cincelada mas aro de bronce.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/torpedodoblearo.jpg" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Mate torpedo doble aro</h3>
+            <p class="producto__desc">Torpedo con virola de alpaca cincelada mas dos aros de bronce.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="banda banda--bombillas" id="bombillas">
+        <svg class="banda__arbol banda__arbol--der" aria-hidden="true" viewBox="0 0 120 200"><use href="#palo-borracho"/></svg>
+        <div class="contenedor banda__fila">
+          <div>
+            <p class="kicker kicker--claro"><span class="kicker__linea" aria-hidden="true"></span>Alpaca y bronce</p>
+            <h2 class="banda__titulo">Bombillas</h2>
+          </div>
+          <p class="banda__lead">Alpaca y bronce.<br>Pico de loro, curva o recta.</p>
+        </div>
+      </div>
+
+      <div class="contenedor grid">
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/bombillamini.png" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Bombilla mini</h3>
+            <p class="producto__desc">Bombilla pico de loro de 16cm.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/bombillaaro.png" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Bombilla doble aro</h3>
+            <p class="producto__desc">Bombilla de 16cm pico de loro con doble aro.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/alpacaaplique.jpg" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Bombillas de alpaca y bronce con aplique</h3>
+            <p class="producto__desc">Bombillas de alpaca de 16cm.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/alpacabroncecurva.jpg" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Bombilla curva de alpaca y bronce</h3>
+            <p class="producto__desc">Bombilla curva de 16 17 cm.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/alpacabroncerecta.jpg" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Bombilla de alpaca y pico de bronce recta</h3>
+            <p class="producto__desc">Bombilla recta de alpaca mas bronce.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/alpacacurva.jpg" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Bombilla curva de alpaca mas aros de bronce</h3>
+            <p class="producto__desc">Bombilla curva de 16cm.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/alpacareca.jpg" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Bombilla recta de alpaca mas aros de bronce</h3>
+            <p class="producto__desc">Bombilla de alpaca recta.</p>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto__media"><img src="assets/img/picodeloro.jpg" loading="lazy"></div>
+          <div class="producto__cuerpo">
+            <h3 class="producto__nombre">Bombilla pico de loro de alpaca y pico de bronce</h3>
+            <p class="producto__desc">Bombilla de alpaca de 17 18 cm.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="cierre" aria-labelledby="cierre-titulo">
+      <div class="cierre__sol" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><use href="#sol-lineas"/></svg>
+      </div>
+      <div class="contenedor cierre__inner">
+        <p class="kicker kicker--claro"><span class="kicker__linea" aria-hidden="true"></span>Fin del recorrido</p>
+        <h2 class="cierre__titulo" id="cierre-titulo">Un mate para<br>cada momento.</h2>
+        <p class="cierre__texto">Recorré los mates y las bombillas y elegí la forma, el material y la terminación que van con vos.</p>
+        <a class="boton boton--ocre" href="#catalogo">Ver el catálogo</a>
+      </div>
+    </section>
+
   </main>
 
-  <!-- Footer con contacto -->
   <footer class="footer">
-    <!--
-    <div class="footer__contacto">
-      <span class="icono-tel">📞</span>
-      <span>+54 9 388 412-3456</span>
-    </div> -->
-    <p class="footer__copy">© Mateño</p>
+    <div class="contenedor footer__inner">
+      <p class="footer__marca" aria-hidden="true">Mateño</p>
+      <div class="footer__fila">
+        <p class="footer__copy">© Mateño</p>
+        <a class="footer__arriba" href="#inicio">Volver arriba</a>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
